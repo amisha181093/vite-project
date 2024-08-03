@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useEffect } from 'react'
 import './App.css'
+import GrandParent from './components/GrandParent'
+import Parent from './components/Parent'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  useEffect(() => {
+    console.log('App useEffect');
+  }, [])
+
+
+  console.log('App.......')
 
   return (
-    <>
-  <h1> amisha </h1>
-    </>
+    <Parent />
   )
 }
 
